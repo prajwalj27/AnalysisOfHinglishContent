@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Analyze Hinglish Content",
+  "description": "Get translation of Hinglish to English",
+  "version": "0.0.1",
+  
+  "browser_action": {
+      "default_popup": "popup.html"
+  },
+  "permissions": [
+      "activeTab",
+      "http://localhost:5000/"
+  ]
+}

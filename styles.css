@@ -1,0 +1,57 @@
+body {
+  background-color: rgb(234, 242, 250);
+  font-family: 'Outfit', sans-serif;
+  padding: 10px;
+  padding-top: 0px;
+}
+
+/* div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+textarea {
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  padding: 7px;
+}
+
+#analyze {
+  font-size: 15px;
+  font-family: 'Outfit', sans-serif;
+  line-height: 0;
+  height: 25px;
+  width: auto;
+  padding: 15px;
+  margin: 10px  0;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(248, 215, 108);
+  transition: all 0.3s;
+}
+
+#analyze:hover {
+  cursor: pointer;
+  background-color: rgb(226, 183, 40);
+}
+
+h2 {
+  color: blueviolet;
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 4px;
+}
+
+#devanagari {
+  font-size: 13px;
+  color: rgb(115, 101, 138);
+}
+
+#english {
+  font-size: 15px;
+}
