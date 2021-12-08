@@ -5,11 +5,9 @@ body {
   padding-top: 0px;
 }
 
-/* div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
+div {
+  width: 300px;
+}
 
 textarea {
   outline: none;
@@ -18,7 +16,7 @@ textarea {
   padding: 7px;
 }
 
-#analyze {
+#translate {
   font-size: 15px;
   font-family: 'Outfit', sans-serif;
   line-height: 0;
@@ -33,7 +31,7 @@ textarea {
   transition: all 0.3s;
 }
 
-#analyze:hover {
+#translate:hover {
   cursor: pointer;
   background-color: rgb(226, 183, 40);
 }
@@ -44,6 +42,7 @@ h2 {
 }
 
 h1 {
+  margin-right: 0;
   margin-bottom: 4px;
 }
 
@@ -52,6 +51,6 @@ h1 {
   color: rgb(115, 101, 138);
 }
 
-#english {
+#english, #inputText {
   font-size: 15px;
 }
