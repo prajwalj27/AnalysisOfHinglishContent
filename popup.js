@@ -10,9 +10,26 @@ chrome.tabs.executeScript(
 let translateButton = document.querySelector('button');
 let inputText = document.querySelector('#inputText');
 
+const loader = document.querySelector("#loading");
+
+// showing loading
+function displayLoading() {
+    loader.classList.add("display");
+    // to stop loading after some time
+    setTimeout(() => {
+        loader.classList.remove("display");
+    }, 23000);
+}
+
+// hiding loading 
+function hideLoading() {
+    loader.classList.remove("display");
+}
+
 translateButton.addEventListener('click', (e) => {
   e.preventDefault();
   console.log('button clicked');
+  displayLoading();
 
   let url = 'http://localhost:5000/translate?text=' + inputText.textContent;
   fetch(url)
@@ -20,6 +37,7 @@ translateButton.addEventListener('click', (e) => {
     .then((response) => response.json())
     .then((json) => {
       console.log(json);
+      hideLoading();
 
       // Display result
       document.querySelector('#outTitle').innerHTML = 'Output -';
