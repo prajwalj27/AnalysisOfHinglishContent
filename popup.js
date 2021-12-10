@@ -41,7 +41,7 @@ translateButton.addEventListener('click', (e) => {
 
       // Display result
       document.querySelector('#outTitle').innerHTML = 'Output -';
-      document.querySelector('#devanagari').innerHTML = json.hindi_text;
+      // document.querySelector('#devanagari').innerHTML = json.hindi_text;
       document.querySelector('#english').innerHTML = json.eng_text;
     });
 });
